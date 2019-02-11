@@ -1,0 +1,498 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bg {
+  background-image: url(./bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#loginForm {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 40vh;
+  height: 40vh;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+#signUp {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50vh;
+  height: 88vh;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+#createTeam {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50vh;
+  height: 80vh;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+#createProject {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50vh;
+  height: 82vh;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+#i-navbrand {
+  height: 5.5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding: 1vh;
+  font-size: 3vh;
+}
+
+#i-nav {
+  height: 7.5vh;
+  padding: 1vh;
+  position: fixed;
+  width: 100vw;
+  font-size: 2vh;
+  z-index: 5;
+}
+
+#i-navtog {
+  height: 5.5vh;
+  margin-top: 0.5vh;
+  margin-bottom: 1.5vh;
+}
+
+#i-form {
+  width: 45vw;
+  border-radius: 25px;
+  height: 5.5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+#i-cardi {
+  width: 20%;
+  height: 92.5vh;
+  text-align: center;
+  display: flex;
+  background-color: rgb(145, 145, 145);
+  margin-left: 12.3%;
+  padding: 0.1vh;
+  margin-top: 7.5vh;
+  position: fixed;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0px;
+}
+
+#i-card-img {
+  width: 20vh;
+  height: 20vh;
+  margin: auto;
+  margin-top: 5vh;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0.5vh;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#i-card-title {
+  font-size: 4vh;
+}
+
+#i-btni1 {
+  width: 10vw;
+  border-radius: 3.5vh;
+  margin: 0.5vh;
+  font-size: 2vh;
+}
+
+#i-btni2 {
+  width: 10vw;
+  border-radius: 3.5vh;
+  margin: 0.5vh;
+  font-size: 2vh;
+}
+
+#i-prog {
+  margin: 3vh 0vw 2vh 0vw;
+}
+
+#i-card-text {
+  text-align: center;
+  font-size: 2vh;
+}
+
+#i-progress {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 20px;
+  height: 2vh;
+  border-radius: 25px;
+}
+
+#i-progress-bar {
+  width: 34.5vh;
+  height: 2vh;
+  border-radius: 25px;
+}
+
+#i-card1 {
+  width: 15vw;
+  height: 30vh;
+  margin: 2vh;
+  padding: 0.1vh;
+  background-color: lightgray;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 3vh;
+  border-radius: 1.5vh;
+}
+
+#i-card1-body {
+  width: 15vw;
+  height: 30vh;
+}
+
+#i-card1-title {
+  font-size: 3vh;
+}
+
+#i-card2 {
+  margin-bottom: 10vh;
+  margin-top: -1.5vh;
+  text-align: left;
+  height: 5vh;
+  background-color: lightgrey;
+}
+
+#i-card2-title {
+  margin-top: -1.5vh;
+  font-size: 3vh;
+}
+
+#i-card2i {
+  margin-top: -3.5vh;
+  margin-left: 6vw;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.5vw;
+  height: 1.2vw;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1vw;
+  width: 1vw;
+  left: 0.1vw;
+  bottom: 0.1vw;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#bar-vis {
+  background-color: rgb(224, 224, 224);
+  padding: 0.4vw;
+  padding-top: 0.8vw;
+  color: black;
+}
+
+#toggle {
+  padding: 5x;
+  margin-left: 11vh;
+  margin-top: 5px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/* POSTS */
+
+#p2 {
+  padding-left: 150px;
+}
+
+#p8 {
+  margin: auto;
+  border-radius: 1vw;
+  color: white;
+  background-color: rgb(38, 38, 38);
+  text-align: center;
+  padding-bottom: 0vw;
+  z-index: 2;
+}
+
+#p3 {
+  color: #f6f6f6;
+}
+
+#p4 {
+  width: 70%;
+  background-color: rgba(99, 99, 99, 0.4);
+}
+
+#p5 {
+  color: #e5e5e5;
+}
+
+#p6 {
+  background-color: #3b3b3b;
+}
+
+#p7 {
+  border-radius: 3vw;
+
+  overflow: hidden;
+}
+
+#postBox {
+  /* background-image: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2012/11/free-backgrounds-3.jpg"); */
+  background-color: rgba(1, 1, 0, 0);
+  margin-top: 7.5vh;
+  width: 1280px;
+  padding: 20px;
+  padding-top: 10vh;
+  height: 3300vh;
+  z-index: -1;
+}
+
+#i-input #i-form {
+  width: 33vh;
+}
+
+.container {
+  padding: 20px;
+  color: ghostwhite;
+  background-color: rgb(58, 58, 58);
+}
+
+.container .img {
+  text-align: center;
+}
+
+.container .details {
+  border-left: 3px solid #ded4da;
+}
+
+.container .details p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#pop_image {
+  cursor: pointer;
+}
+
+#p-title {
+  text-align: center;
+}
+
+#p-left {
+  float: left;
+  padding: 1vh;
+  text-align: center;
+}
+
+#p-right {
+  float: right;
+  padding: 1vh;
+  text-align: center;
+}
+
+#p-desc {
+  text-align: center;
+}
+
+#c-btn-group1 {
+  background-color: rgba(211, 211, 211, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+  z-index: 3;
+}
+
+#c-btn-group1:hover {
+  background-color: rgba(211, 211, 211, 0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+}
+
+#c-btn-group2 {
+  background-color: rgba(211, 211, 211, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+  margin-left: 4px;
+  margin-right: 4px;
+  z-index: 3;
+}
+
+#c-btn-group2:hover {
+  background-color: rgba(211, 211, 211, 0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#c-btn-group3 {
+  background-color: rgba(211, 211, 211, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+  z-index: 3;
+}
+
+#c-btn-group3:hover {
+  background-color: rgba(211, 211, 211, 0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+}
+
+#img1 {
+  width: 20vh;
+  margin: 0vh 4vh 0vh 4vh;
+}
+
+#img2 {
+  width: 20vh;
+  margin: 0vh 4vh 0vh 4vh;
+}
+
+#img3 {
+  width: 20vh;
+  margin: 0vh 4vh 0vh 4vh;
+}
+
+#c-btn-group {
+  margin: auto;
+  margin-left: 160px;
+  margin-bottom: 100px;
+}
+
+#full {
+  height: 130vh;
+  margin-top: -25vh;
+  padding-top: 10vh;
+}
+
+#update {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50vh;
+  height: 48vh;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+.textAnimate {
+  color: white;
+  font-family: "courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+.textAnimate:nth-child(2) {
+  animation: type2 8s steps(60, end);
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+::selection {
+  background: black;
+}
